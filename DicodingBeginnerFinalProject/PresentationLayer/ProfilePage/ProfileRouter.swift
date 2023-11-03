@@ -18,6 +18,4 @@ class ProfileRouter: ProfileRouterProtocol {
     init(profileViewController: UIViewController) {
         self.profileViewController = profileViewController
     }
-    
-    
 }

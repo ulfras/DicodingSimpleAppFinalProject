@@ -21,6 +21,7 @@ class TabBarViewController: UITabBarController {
 }
 
 extension TabBarViewController {
+    
     private func setupMealListPage() -> UINavigationController {
         
         let mealListPage = MealListBuilder.build()

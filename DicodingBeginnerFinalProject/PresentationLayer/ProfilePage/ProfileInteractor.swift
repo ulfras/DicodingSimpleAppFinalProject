@@ -12,5 +12,4 @@ protocol ProfileInteractorProtocol {
 class ProfileInteractor: ProfileInteractorProtocol {
     var profilePresenter: ProfilePresenterProtocol?
     
-    
 }
