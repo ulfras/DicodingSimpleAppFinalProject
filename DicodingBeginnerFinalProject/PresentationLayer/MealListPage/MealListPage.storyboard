@@ -11,7 +11,6 @@
         <!--Navigation Controller-->
         <scene sceneID="nL8-zB-dHp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a8t-vG-cOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="czE-7r-hzr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7d9-vL-cH3">
@@ -23,6 +22,7 @@
                         <segue destination="FZJ-ki-5fs" kind="relationship" relationship="rootViewController" id="hkq-xY-i8a"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8t-vG-cOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="49" y="4"/>
         </scene>
@@ -39,14 +39,18 @@
                             <outlet property="delegate" destination="FZJ-ki-5fs" id="7AV-ov-PwW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Meal List" id="Y7h-2E-OPH"/>
+                    <navigationItem key="navigationItem" title="Meal List" largeTitleDisplayMode="never" id="Y7h-2E-OPH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swg-FT-GiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="951" y="4"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="DicodingColor"/>
     <resources>
+        <namedColor name="DicodingColor">
+            <color red="0.26666666666666666" green="0.32941176470588235" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -23,12 +23,22 @@ class MealListTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
+            self.tableView.deselectRow(at: selectedIndexPath, animated: true)
+        }
+        self.hidesBottomBarWhenPushed = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: "MealListTableViewCell", bundle: nil), forCellReuseIdentifier: "MealListCell")
         mealListPresenter?.willFetchMealList()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.hidesBottomBarWhenPushed = false
     }
 }
 
@@ -85,6 +95,7 @@ extension MealListTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let populateCellData = mealListData[indexPath.row]
+        mealListPresenter?.willGoToDetailMeal(mealData: populateCellData)
     }
 }

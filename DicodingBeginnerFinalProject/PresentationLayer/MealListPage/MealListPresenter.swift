@@ -11,6 +11,8 @@ protocol MealListPresenterProtocol {
     var mealListRouter: MealListRouterProtocol? { get set }
     
     func willFetchMealList()
+    
+    func willGoToDetailMeal(mealData: MealListEntity)
 }
 
 class MealListPresenter: MealListPresenterProtocol {
@@ -41,5 +43,9 @@ class MealListPresenter: MealListPresenterProtocol {
                 self.mealListView?.failedToFetchMealData(error.localizedDescription)
             }
         }
+    }
+    
+    func willGoToDetailMeal(mealData: MealListEntity) {
+        mealListRouter?.goToDetailMealPage(mealData: mealData)
     }
 }

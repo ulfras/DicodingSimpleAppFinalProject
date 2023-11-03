@@ -13,10 +13,19 @@ protocol ProfileViewProtocol {
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var devImageViewOutlet: UIImageView!
+    
     var profilePresenter: ProfilePresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
+        devImageViewOutlet.layer.cornerRadius = devImageViewOutlet.frame.size.width / 2
+        devImageViewOutlet.layer.borderWidth = 1
+        devImageViewOutlet.layer.borderColor = UIColor.dicoding.cgColor
     }
 }
 

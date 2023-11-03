@@ -34,7 +34,7 @@ extension TabBarViewController {
         mealListNavigationController.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.systemGray], for: .normal)
         mealListNavigationController.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.black], for: .selected)
         
-        mealListNavigationController.navigationBar.prefersLargeTitles = true
+        mealListNavigationController.navigationBar.tintColor = .black
         
         return mealListNavigationController
     }
@@ -51,6 +51,8 @@ extension TabBarViewController {
         profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: profileIcon, selectedImage: selectedProfileIcon)
         profileNavigationController.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.systemGray], for: .normal)
         profileNavigationController.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.black], for: .selected)
+        
+        profileNavigationController.navigationBar.tintColor = .black
         
         return profileNavigationController
     }

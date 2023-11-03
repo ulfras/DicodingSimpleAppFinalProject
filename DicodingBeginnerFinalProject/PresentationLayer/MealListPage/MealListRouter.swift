@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MealListRouterProtocol{
-    
+    func goToDetailMealPage(mealData: MealListEntity)
 }
 
 class MealListRouter: MealListRouterProtocol {
@@ -19,5 +19,8 @@ class MealListRouter: MealListRouterProtocol {
         self.mealListViewController = mealListViewController
     }
     
-    
+    func goToDetailMealPage(mealData: MealListEntity) {
+        let detailMeal = DetailMealBuilder.build(DetailMealListModel(foodID: mealData.foodID, foodName: mealData.foodName, foodImageURL: mealData.foodImageURL))
+        mealListViewController?.navigationController?.pushViewController(detailMeal, animated: true)
+    }
 }

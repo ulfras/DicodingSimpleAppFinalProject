@@ -32,6 +32,14 @@
 		31790E6C2AF4F772001FD6E8 /* MealListSeafoodDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E6B2AF4F772001FD6E8 /* MealListSeafoodDetailModel.swift */; };
 		31790E6E2AF4F7F2001FD6E8 /* MealListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E6D2AF4F7F2001FD6E8 /* MealListEntity.swift */; };
 		31790E712AF4FB30001FD6E8 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E702AF4FB30001FD6E8 /* UIImageView + Extension.swift */; };
+		31790E762AF50DDC001FD6E8 /* DetailMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E752AF50DDC001FD6E8 /* DetailMealView.swift */; };
+		31790E782AF50DE2001FD6E8 /* DetailMealInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E772AF50DE2001FD6E8 /* DetailMealInteractor.swift */; };
+		31790E7A2AF50DE7001FD6E8 /* DetailMealPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E792AF50DE7001FD6E8 /* DetailMealPresenter.swift */; };
+		31790E7C2AF50DEF001FD6E8 /* DetailMealRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E7B2AF50DEF001FD6E8 /* DetailMealRouter.swift */; };
+		31790E7E2AF50DF7001FD6E8 /* DetailMealBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31790E7D2AF50DF7001FD6E8 /* DetailMealBuilder.swift */; };
+		31790E802AF50DFC001FD6E8 /* DetailMealPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31790E7F2AF50DFC001FD6E8 /* DetailMealPage.storyboard */; };
+		31DBA60D2AF56E2500596F3C /* DetailMealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DBA60C2AF56E2500596F3C /* DetailMealEntity.swift */; };
+		31DBA60F2AF576DA00596F3C /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DBA60E2AF576DA00596F3C /* String + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +70,14 @@
 		31790E6B2AF4F772001FD6E8 /* MealListSeafoodDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListSeafoodDetailModel.swift; sourceTree = "<group>"; };
 		31790E6D2AF4F7F2001FD6E8 /* MealListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListEntity.swift; sourceTree = "<group>"; };
 		31790E702AF4FB30001FD6E8 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		31790E752AF50DDC001FD6E8 /* DetailMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealView.swift; sourceTree = "<group>"; };
+		31790E772AF50DE2001FD6E8 /* DetailMealInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealInteractor.swift; sourceTree = "<group>"; };
+		31790E792AF50DE7001FD6E8 /* DetailMealPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealPresenter.swift; sourceTree = "<group>"; };
+		31790E7B2AF50DEF001FD6E8 /* DetailMealRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealRouter.swift; sourceTree = "<group>"; };
+		31790E7D2AF50DF7001FD6E8 /* DetailMealBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealBuilder.swift; sourceTree = "<group>"; };
+		31790E7F2AF50DFC001FD6E8 /* DetailMealPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailMealPage.storyboard; sourceTree = "<group>"; };
+		31DBA60C2AF56E2500596F3C /* DetailMealEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealEntity.swift; sourceTree = "<group>"; };
+		31DBA60E2AF576DA00596F3C /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		5F5E5ABADB4AC349F0F977A8 /* Pods-DicodingBeginnerFinalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicodingBeginnerFinalProject.release.xcconfig"; path = "Target Support Files/Pods-DicodingBeginnerFinalProject/Pods-DicodingBeginnerFinalProject.release.xcconfig"; sourceTree = "<group>"; };
 		6481A3C8FBBD0A2D65B4349C /* Pods-DicodingBeginnerFinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicodingBeginnerFinalProject.debug.xcconfig"; path = "Target Support Files/Pods-DicodingBeginnerFinalProject/Pods-DicodingBeginnerFinalProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +136,7 @@
 		31790E3E2AF4DBFF001FD6E8 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				31790E422AF4DD25001FD6E8 /* DetailMealListPage */,
+				31790E742AF50DAC001FD6E8 /* DetailMealPage */,
 				31790E3F2AF4DC05001FD6E8 /* LaunchScreen */,
 				31790E412AF4DD19001FD6E8 /* MealListPage */,
 				31790E432AF4DD2D001FD6E8 /* ProfilePage */,
@@ -159,13 +175,6 @@
 				31790E6D2AF4F7F2001FD6E8 /* MealListEntity.swift */,
 			);
 			path = MealListPage;
-			sourceTree = "<group>";
-		};
-		31790E422AF4DD25001FD6E8 /* DetailMealListPage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DetailMealListPage;
 			sourceTree = "<group>";
 		};
 		31790E432AF4DD2D001FD6E8 /* ProfilePage */ = {
@@ -228,8 +237,23 @@
 			isa = PBXGroup;
 			children = (
 				31790E702AF4FB30001FD6E8 /* UIImageView + Extension.swift */,
+				31DBA60E2AF576DA00596F3C /* String + Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		31790E742AF50DAC001FD6E8 /* DetailMealPage */ = {
+			isa = PBXGroup;
+			children = (
+				31790E7F2AF50DFC001FD6E8 /* DetailMealPage.storyboard */,
+				31790E7D2AF50DF7001FD6E8 /* DetailMealBuilder.swift */,
+				31790E772AF50DE2001FD6E8 /* DetailMealInteractor.swift */,
+				31790E792AF50DE7001FD6E8 /* DetailMealPresenter.swift */,
+				31790E7B2AF50DEF001FD6E8 /* DetailMealRouter.swift */,
+				31790E752AF50DDC001FD6E8 /* DetailMealView.swift */,
+				31DBA60C2AF56E2500596F3C /* DetailMealEntity.swift */,
+			);
+			path = DetailMealPage;
 			sourceTree = "<group>";
 		};
 		393990E4916C676E5BB1FBE1 /* Pods */ = {
@@ -312,6 +336,7 @@
 				31790E452AF4DD3B001FD6E8 /* MealListPage.storyboard in Resources */,
 				31790E632AF4F283001FD6E8 /* MealListTableViewCell.xib in Resources */,
 				31790E362AF4DB22001FD6E8 /* LaunchScreen.storyboard in Resources */,
+				31790E802AF50DFC001FD6E8 /* DetailMealPage.storyboard in Resources */,
 				31790E332AF4DB22001FD6E8 /* Assets.xcassets in Resources */,
 				31790E5E2AF4E8E7001FD6E8 /* ProfilePage.storyboard in Resources */,
 			);
@@ -368,23 +393,30 @@
 			files = (
 				31790E672AF4F5C3001FD6E8 /* MealListSeafoodModel.swift in Sources */,
 				31790E5A2AF4E8B0001FD6E8 /* ProfileRouter.swift in Sources */,
+				31790E7C2AF50DEF001FD6E8 /* DetailMealRouter.swift in Sources */,
+				31790E7E2AF50DF7001FD6E8 /* DetailMealBuilder.swift in Sources */,
 				31790E582AF4E8A7001FD6E8 /* ProfilePresenter.swift in Sources */,
+				31DBA60D2AF56E2500596F3C /* DetailMealEntity.swift in Sources */,
 				31790E4B2AF4DD65001FD6E8 /* MealListBuilder.swift in Sources */,
 				31790E542AF4E89B001FD6E8 /* ProfileView.swift in Sources */,
 				31790E562AF4E8A0001FD6E8 /* ProfileInteractor.swift in Sources */,
 				31790E4F2AF4DD6F001FD6E8 /* MealListRouter.swift in Sources */,
+				31DBA60F2AF576DA00596F3C /* String + Extension.swift in Sources */,
 				31790E522AF4DF28001FD6E8 /* TabBarView.swift in Sources */,
 				31790E712AF4FB30001FD6E8 /* UIImageView + Extension.swift in Sources */,
 				31790E2A2AF4DB20001FD6E8 /* AppDelegate.swift in Sources */,
 				31790E6A2AF4F643001FD6E8 /* MealDBAPI.swift in Sources */,
 				31790E6C2AF4F772001FD6E8 /* MealListSeafoodDetailModel.swift in Sources */,
+				31790E7A2AF50DE7001FD6E8 /* DetailMealPresenter.swift in Sources */,
 				31790E622AF4F283001FD6E8 /* MealListTableViewCell.swift in Sources */,
 				31790E492AF4DD62001FD6E8 /* MealListPresenter.swift in Sources */,
 				31790E2C2AF4DB20001FD6E8 /* SceneDelegate.swift in Sources */,
 				31790E472AF4DD53001FD6E8 /* MealListView.swift in Sources */,
+				31790E762AF50DDC001FD6E8 /* DetailMealView.swift in Sources */,
 				31790E6E2AF4F7F2001FD6E8 /* MealListEntity.swift in Sources */,
 				31790E5C2AF4E8B4001FD6E8 /* ProfileBuilder.swift in Sources */,
 				31790E4D2AF4DD6B001FD6E8 /* MealListInteractor.swift in Sources */,
+				31790E782AF50DE2001FD6E8 /* DetailMealInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,10 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeveloperImage" translatesAutoresizingMaskIntoConstraints="NO" id="Yhr-eS-mA6">
+                                <rect key="frame" x="120" y="141" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="RLd-NO-dui"/>
+                                    <constraint firstAttribute="height" constant="150" id="aWO-xG-dWi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginner Final Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9Q-H6-ioG">
+                                <rect key="frame" x="112" y="311" width="166" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-Mp-Awk">
+                                <rect key="frame" x="185.66666666666666" y="336.33333333333331" width="18.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maulana Muhammad Yusuf Frasha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-3s-OoE">
+                                <rect key="frame" x="64" y="361.66666666666669" width="262" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zRK-3s-OoE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0eB-s1-LA7"/>
+                            <constraint firstItem="Yhr-eS-mA6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="1oH-5f-uH3"/>
+                            <constraint firstItem="Pfa-Mp-Awk" firstAttribute="top" secondItem="l9Q-H6-ioG" secondAttribute="bottom" constant="5" id="2Ee-VN-BO8"/>
+                            <constraint firstItem="l9Q-H6-ioG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="AX4-7n-6ki"/>
+                            <constraint firstItem="Pfa-Mp-Awk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BmC-A8-1Oc"/>
+                            <constraint firstItem="l9Q-H6-ioG" firstAttribute="top" secondItem="Yhr-eS-mA6" secondAttribute="bottom" constant="20" id="QCl-AA-ri5"/>
+                            <constraint firstItem="Yhr-eS-mA6" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Qae-ew-TrU"/>
+                            <constraint firstItem="zRK-3s-OoE" firstAttribute="top" secondItem="Pfa-Mp-Awk" secondAttribute="bottom" constant="5" id="vMC-wz-nFT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dMj-vg-zjx"/>
+                    <connections>
+                        <outlet property="devImageViewOutlet" destination="Yhr-eS-mA6" id="1oC-G7-Sc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +85,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DeveloperImage" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
